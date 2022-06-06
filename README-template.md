@@ -51,6 +51,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 https://www.delftstack.com/howto/css/css-inner-border/
 https://css-tricks.com/how-to-stack-elements-in-css/
+https://www.w3schools.com/csS/css3_flexbox_items.asp
 
 ### Built with
 
