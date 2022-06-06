@@ -49,6 +49,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+https://www.delftstack.com/howto/css/css-inner-border/
+https://css-tricks.com/how-to-stack-elements-in-css/
+
 ### Built with
 
 - Semantic HTML5 markup

@@ -10,14 +10,20 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <body>
   <article>
     <div class="balance">
-      My balance
-      $921.48
+      <div class="amount">
+        <p>My balance</p>
+        <h2>$921.48</h2>
+      </div>
+      <div class="logo">
+        <div class="circleBorder"></div>
+        <div class="circleFull"></div>
+      </div>
     </div>
     <div class="expenses">
       <div class="spending">
@@ -35,11 +41,14 @@
         </div>
       </div>
       <div class="total">
-        Total this month
-        $478.33
-      
-        +2.4%
-        from last month
+        <div class="thisMonth">
+          <p>Total this month</p>
+          <h1>$478.33</h1>
+        </div>
+        <div class="lastMonth">
+          <p>+2.4%</p>
+          <p>from last month</p>
+        </div>
       </div>
     </div>
   </article>
