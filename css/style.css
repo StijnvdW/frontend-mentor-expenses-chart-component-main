@@ -39,7 +39,7 @@ p {
 }
 
 article {
-    width: 325px;
+    width: 350px;
 }
 
 /* Balance */
@@ -83,7 +83,7 @@ article {
     flex-direction: column;
     background-color: var(--clr-neutral-very-pale-orange);
     border-radius: 15px;
-    padding: 15px;
+    padding: 20px;
 }
 
 .expenses > * {
@@ -91,11 +91,66 @@ article {
 }
 
 .spending {
-    border-bottom: 3px solid var(--clr-neutral-cream);
+    border-bottom: 2px solid var(--clr-neutral-cream);
     padding-bottom: 20px;
 }
 .spending > h2 {
     color: var(--clr-neutral-dark-brown);
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 5px;
+}
+
+.column {
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.column > .amount {
+    width: 35px;
+    background-color: var(--clr-primary-soft-red);
+    border-radius: 3px;
+}
+
+.column > .day {
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.mon {
+    height: 50px;
+}
+
+.tue {
+    height: 100px;
+}
+
+.column > .wed {
+    height: 150px;
+    background-color: var(--clr-primary-cyan);
+}
+
+.thu {
+    height: 89px;
+}
+
+.fri {
+    height: 67px;
+}
+
+.sat {
+    height: 124px;
+}
+
+.sun {
+    height: 74px;
 }
 
 .total {
@@ -103,6 +158,11 @@ article {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 20px;
+}
+
+.legend {
+    display: flex;
+    justify-content: space-between;
 }
 
 .total > * {
@@ -116,9 +176,8 @@ article {
 .thisMonth {
     display: flex;
     justify-content: space-between;
+    padding-top: 5px;
 }
-
-
 
 .lastMonth {
     display: flex;
