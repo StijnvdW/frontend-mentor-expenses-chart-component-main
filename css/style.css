@@ -24,6 +24,20 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 30px;
+    color: var(--clr-neutral-dark-brown);
+}
+
+h2 {
+    font-size: 24px;
+    padding-top: 5px;
+}
+
+p {
+    font-size: 16px;
+}
+
 article {
     width: 325px;
 }
@@ -34,8 +48,9 @@ article {
     justify-content: space-between;
     background-color: var(--clr-primary-soft-red);
     color: var(--clr-neutral-very-pale-orange);
-    padding: 15px;
+    padding: 20px;
     border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 .logo {
@@ -44,26 +59,85 @@ article {
 }
 
 .circleBorder {
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-    outline: 3px solid var(--clr-neutral-very-pale-orange);
-    outline-offset: -3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    outline: 2px solid var(--clr-neutral-very-pale-orange);
+    outline-offset: -2px;
     background-color: transparent;
     z-index: 1;
 }
 
 .circleFull {
-    margin-left: -30px;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
     background-color: var(--clr-neutral-dark-brown);
     z-index: 0;
 }
 
 /* Expenses */
+.expenses {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-neutral-very-pale-orange);
+    border-radius: 15px;
+    padding: 15px;
+}
 
+.expenses > * {
+    color: var(--clr-neutral-medium-brown);
+}
+
+.spending {
+    border-bottom: 3px solid var(--clr-neutral-cream);
+    padding-bottom: 20px;
+}
+.spending > h2 {
+    color: var(--clr-neutral-dark-brown);
+}
+
+.total {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.total > * {
+    flex-basis: 100%;
+}
+
+.total > p {
+    color: var(--clr-neutral-medium-brown);
+}
+
+.thisMonth {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.lastMonth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.lastMonth > * {
+    margin: 0;
+}
+
+.description     {
+    color: var(--clr-neutral-medium-brown);
+}
+
+.percentage {
+    color: var(--clr-neutral-dark-brown);
+}
 
 .attribution {
     font-size: 11px;
