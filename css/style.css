@@ -1,0 +1,25 @@
+:root {
+    --clr-primary-soft-red: hsl(10, 79%, 65%);
+    --clr-primary-cyan: hsl(186, 34%, 60%);
+    --clr-neutral-dark-brown: hsl(25, 47%, 15%);
+    --clr-neutral-medium-brown: hsl(28, 10%, 53%);
+    --clr-neutral-cream: hsl(27, 66%, 92%);
+    --clr-neutral-very-pale-orange: hsl(33, 100%, 98%);
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--clr-neutral-cream);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
