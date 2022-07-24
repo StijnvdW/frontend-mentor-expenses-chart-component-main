@@ -133,8 +133,13 @@ article {
 
 .column > .bar {
     width: 30px;
-    background-color: var(--clr-primary-soft-red);
+}
+
+.column > .bar > .color {
+    width: 100%;
+    height: 100%;
     border-radius: 3px;
+    background-color: var(--clr-primary-soft-red);
 }
 
 .column > .day {
@@ -142,7 +147,11 @@ article {
     padding-top: 10px;
 }
 
-.column > .tooltip {
+.column > .bar {
+    position: relative;
+}
+
+.column > .bar > .tooltip {
     background-color: var(--clr-neutral-dark-brown);
     color: var(--clr-neutral-very-pale-orange);
     border-radius: 3px;
@@ -151,6 +160,9 @@ article {
     padding: 2px;
     font-weight: var(--fw-bold);
     visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: -20%;
 }
 
 @media only screen and (min-width: 376px) {
@@ -168,8 +180,9 @@ article {
     .column > .day {
         font-size: .875rem;
     }
-    .column > .tooltip {
-        font-size: .875rem;
+    .column > .bar > .tooltip {
+        font-size: 1.125rem;
+        padding: 10px;
     }
 }
 
@@ -183,6 +196,9 @@ article {
 
 .column > .wed {
     height: 150px;
+}
+
+.column > .wed > .color {
     background-color: var(--clr-primary-cyan);
 }
 
@@ -209,13 +225,16 @@ article {
     padding-top: 20px;
 }
 
-.column:hover > .tooltip {
+.column:hover > .bar {
+    cursor: pointer;
+}
+
+.column:hover > .bar > .tooltip {
     visibility: visible;
 }
 
-.column:hover > .bar {
+.column:hover > .bar > .color {
     opacity: 50%;
-    cursor: pointer;
 }
 
 /* Expenses legende */

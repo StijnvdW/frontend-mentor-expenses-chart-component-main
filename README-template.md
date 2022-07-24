@@ -53,6 +53,11 @@ https://www.delftstack.com/howto/css/css-inner-border/
 https://css-tricks.com/how-to-stack-elements-in-css/
 https://www.w3schools.com/csS/css3_flexbox_items.asp
 
+https://www.w3schools.com/css/css_tooltip.asp
+https://css-tricks.com/non-transparent-elements-inside-transparent-elements/
+https://jsfiddle.net/Krxldfx/ao3hjh0r/
+https://www.sitepoint.com/hide-elements-in-css/
+
 ### Built with
 
 - Semantic HTML5 markup
