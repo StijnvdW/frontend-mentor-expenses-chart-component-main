@@ -52,7 +52,7 @@ article {
     }
     
     h2 {
-        font-size: 1.875rem;
+        font-size: 2rem;
     }
 
     p {
@@ -159,13 +159,18 @@ article {
     font-size: .75rem;
     padding: 2px;
     font-weight: var(--fw-bold);
+
     visibility: hidden;
     position: absolute;
-    bottom: 100%;
+    bottom: 102%;
     left: -20%;
 }
 
 @media only screen and (min-width: 376px) {
+    .chart {
+        padding-top: 20px;
+    }
+
     .balance {
         padding: 30px;
     }
@@ -177,12 +182,17 @@ article {
         width: 50px;
     }
 
+    .column > .bar > .color {
+        border-radius: 5px;
+    }
+
     .column > .day {
-        font-size: .875rem;
+        font-size: 1rem;
     }
     .column > .bar > .tooltip {
+        border-radius: 5px;
         font-size: 1.125rem;
-        padding: 10px;
+        padding: 8px;
     }
 }
 
