@@ -10,7 +10,7 @@
 }
 
 body {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'DM Sans', sans-serif;
     background-color: var(--clr-neutral-cream);
     height: 100vh;
@@ -25,21 +25,39 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: var(--clr-neutral-dark-brown);
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     padding-top: 5px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 article {
     width: 350px;
+}
+
+@media only screen and (min-width: 376px) {
+    article {
+        width: 540px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 1.875rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
 }
 
 /* Balance */
@@ -120,7 +138,7 @@ article {
 }
 
 .column > .day {
-    font-size: 12px;
+    font-size: .75rem;
     padding-top: 10px;
 }
 
@@ -129,10 +147,30 @@ article {
     color: var(--clr-neutral-very-pale-orange);
     border-radius: 3px;
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: .75rem;
     padding: 2px;
     font-weight: var(--fw-bold);
     visibility: hidden;
+}
+
+@media only screen and (min-width: 376px) {
+    .balance {
+        padding: 30px;
+    }
+    .expenses {
+        padding: 40px;
+    }
+
+    .column > .bar {
+        width: 50px;
+    }
+
+    .column > .day {
+        font-size: .875rem;
+    }
+    .column > .tooltip {
+        font-size: .875rem;
+    }
 }
 
 .mon {
