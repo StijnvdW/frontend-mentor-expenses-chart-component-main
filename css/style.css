@@ -76,10 +76,13 @@ article {
     display: flex;
 }
 
-.circleBorder {
+.circle {
     width: 40px;
     height: 40px;
     border-radius: 40px;
+}
+
+.circleBorder {
     outline: 2px solid var(--clr-neutral-very-pale-orange);
     outline-offset: -2px;
     background-color: transparent;
@@ -88,11 +91,20 @@ article {
 
 .circleFull {
     margin-left: -20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
     background-color: var(--clr-neutral-dark-brown);
     z-index: 0;
+}
+
+@media only screen and (min-width: 376px) {
+    .circle {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+    }
+
+    .circleFull {
+        margin-left: -24px;
+    }
 }
 
 /* Expenses chart */
